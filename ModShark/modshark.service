@@ -3,8 +3,9 @@ Description=ModShark
 Documentation=https://github.com/warriordog/ModShark
 
 After=network.target
-After=postgresql.service
-Wants=postgresql.service
+# uncomment the following if modshark is running on the same host as postgresql
+#After=postgresql.service
+#Wants=postgresql.service
 
 [Service]
 Type=simple
